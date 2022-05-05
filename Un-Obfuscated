@@ -43,3 +43,4 @@ end)
 Other:NewButton("Redeem All Codes", "Redeems All Codes", function()
     loadstring(game:HttpGetAsync("https://pastebin.com/raw/HisbjQMD", true))()
 end)
+end
