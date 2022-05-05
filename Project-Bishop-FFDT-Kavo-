@@ -1,0 +1,45 @@
+if game.PlaceId == 6447798030 then
+
+print("Anti Afk On")
+
+local vu = game:GetService("VirtualUser")
+game:GetService("Players").LocalPlayer.Idled:connect(function()
+   vu:Button2Down(Vector2.new(0,0),workspace.CurrentCamera.CFrame)
+   wait(1)
+   vu:Button2Up(Vector2.new(0,0),workspace.CurrentCamera.CFrame)
+end)
+
+local Library = loadstring(game:HttpGet("https://raw.githubusercontent.com/xHeptc/Kavo-UI-Library/main/source.lua"))()
+
+local Window = Library.CreateLib("Project Bishop", "Synapse")
+
+local Tab = Window:NewTab("Main Scripts")
+local Main = Tab:NewSection("2 Accounts Needed For Winstreak Farm")
+Main:NewButton("Point Farm", "Point Farmer", function()
+    loadstring(game:HttpGet("https://pastebin.com/raw/7xrgtv6z",true))()
+end)
+Main:NewButton("Winstreak Farm Left", "Left Stage Farm", function()
+    loadstring(game:HttpGet("https://pastebin.com/raw/nX41rkE6",true))()
+end)
+Main:NewButton("Winstreak Farm Right", "Right Stage Farm", function()
+    loadstring(game:HttpGet("https://pastebin.com/raw/bLDsifeA",true))()
+end)
+
+--Other Scripts
+local Tab = Window:NewTab("Other Scripts")
+local Other = Tab:NewSection("Rejoin The Game To See CC Mic/Admin Animation")
+Other:NewButton("Autoplayer (Wally's)", "AutoPlayer For Songs", function()
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/wally-rblx/funky-friday-autoplay/main/main.lua",true))()
+end)
+Other:NewButton("Give Admin Animation", "Gives You An Admin Animation", function()
+    loadstring(game:HttpGetAsync("https://pastebin.com/raw/wAi5N9Yh", true))()
+end)
+Other:NewButton("Give Content Creator Mic", "Gives You A Content Creator Mic", function()
+    loadstring(game:HttpGetAsync("https://pastebin.com/raw/VENcgJVr", true))()
+end)
+Other:NewButton("Give Boss Mics", "Gives You Boss Microphones", function()
+    loadstring(game:HttpGetAsync("https://pastebin.com/raw/dQBRhwTk", true))()
+end)
+Other:NewButton("Redeem All Codes", "Redeems All Codes", function()
+    loadstring(game:HttpGetAsync("https://pastebin.com/raw/HisbjQMD", true))()
+end)
